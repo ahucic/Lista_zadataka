@@ -1,0 +1,6 @@
+﻿<form asp-controller="Home" asp-action="AddToDo" method="post">
+    <input id="myToDo" name="myToDo" type="text" placeholder="Add new" />
+    <button type="submit">Click</button>
+</form>
+@foreach (var todo in Model)
+    {<p>@todo.Name</p>}
